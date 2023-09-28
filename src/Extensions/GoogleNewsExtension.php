@@ -29,7 +29,7 @@ class GoogleNewsExtension
             }
 
             if (isset($extFields['publication']['language'])) {
-                $xmlWriter->writeElement('news:language', $extFields['language']);
+                $xmlWriter->writeElement('news:language', $extFields['publication']['language']);
             }
 
             $xmlWriter->endElement();
